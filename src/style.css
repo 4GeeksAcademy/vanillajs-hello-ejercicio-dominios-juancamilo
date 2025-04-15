@@ -1,5 +1,23 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: white;
-}
+.cuadro-dominio{
+    text-align: center;
+    padding-top: ;
+    
+    }
+    .titulo{
+        text-align: center;
+        padding-top: 10%;
+        margin: 0%;
+        font-size: 50px;
+    }
+    body{
+        margin: 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .cuadro-h1{
+       margin: 10%;
+       border-color: solid black;
+       border-style: double;
+       
+    }

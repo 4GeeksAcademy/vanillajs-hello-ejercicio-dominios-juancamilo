@@ -1,11 +1,20 @@
-import "bootstrap";
-import "./style.css";
+window.onload=()=>{
+  
+  document.querySelector("#dominio-generado").innerHTML=generadorDominio();
+  
+}
+const generadorDominio=()=>{
+
+let pronoun = ['the', 'our', 'his'];
+let adj = ['great', 'big', 'amazing' ];
+let noun = ['jogger', 'racoon', 'dog', 'merchant', 'driver'];
+let dominio = [ ".com", ".net", ".us", ".io"];
 
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let pronounGEN = Math.floor(Math.random()*pronoun.length);
+let adjGEN = Math.floor(Math.random()* adj.length);
+let nounGEN = Math.floor(Math.random()* noun.length);
+let dominioGEN = Math.floor(Math.random()* dominio.length);
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  return pronoun[pronounGEN] + adj[adjGEN] + noun[nounGEN] + dominio[dominioGEN];
+}
